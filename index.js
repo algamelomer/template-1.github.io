@@ -34,6 +34,8 @@ window.addEventListener('load', () => {
     img.style.display = 'none';
 });
 
+
+
 // onload=()=>{
 //     let btn=document.getElementById("dark_mode")
 //     btn.onclick = () =>{
@@ -95,4 +97,22 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
+let scroller=document.getElementById("test")
+scroller.onclick=()=>{
+    window.scroll({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    }
+    )
+}
+
+onscroll=()=>{
+    if(window.scrollY>=400){
+      scroller.style.display="block"
+    }
+    else if(window.scrollY<400){
+      scroller.style.display="none"
+    }
+}
 }
