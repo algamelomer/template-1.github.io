@@ -1,129 +1,175 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    color: #333;
+:root {
+  --c-background: #eff3f4;
+  --c-text: #212121;
+  --c-heading: #999;
+  --c-primary: #ff6600;
+  --c-accent: #a16a05;
 }
 
-body{
-    background-color: #eff3f4;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-background: #333237;
+    --c-text: #f8f8f8;
+    --c-heading: #fff;
+    --c-primary: #ff6600;
+    --c-accent: #a16a05;
+  }
 }
 
-/*********************  topbar  **********************/
-
-.topbar{
-    background-color: #cbdde6;
-    height: fit-content;
-    height: 30px;
-    padding-top: 5px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--c-text);
 }
 
-
-.topbar .container-topbar .info img{
-    width: 15px;
-    padding: 0 5px;
+body {
+  background-color: var(--c-background);
 }
 
-.topbar .container-topbar .info a{
-    font-size: 12px;
-    text-decoration-line: none;
-    color:#333 ;
-    letter-spacing: 1px;
+.topbar {
+  background-color: #cbdde6;
+  height: fit-content;
+  height: 30px;
+  padding-top: 5px;
 }
 
-.topbar .container-topbar .topbar-facebook{
-    display: flex;
-    justify-content: right;
-    position: relative;
+.topbar .container-topbar .info img {
+  width: 15px;
+  padding: 0 5px;
 }
 
-.topbar .container-topbar .topbar-facebook img{
-    width: 25px;
-    padding: 0 5px;
-    display: flex;
-    justify-content:flex-start;
-    position: relative;
-    bottom: 20px;
+.topbar .container-topbar .info a {
+  font-size: 12px;
+  text-decoration-line: none;
+  color: var(--c-text);
+  letter-spacing: 1px;
 }
 
-.topbar .container-topbar .info  :hover{
-    color:#ff6600 ;
+.topbar .container-topbar .topbar-facebook {
+  display: flex;
+  justify-content: right;
+  position: relative;
 }
 
-/*********************  navbar  **********************/
+.topbar .container-topbar .topbar-facebook img {
+  width: 25px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 20px;
+}
+
+.topbar .container-topbar .info:hover {
+  color: var(--c-primary);
+}
 
 .navbar {
-    position: relative;
+  position: relative;
 }
 
 .navbar .container-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-bottom: 10px;
 }
 
 .navbar .container-navbar .info {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .navbar .container-navbar .info img {
-    width: 150px;
+  width: 150px;
 }
 
 .navbar .container-navbar .info h1 {
-    font-size: 25px;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #333;
+  font-size: 25px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: var(--c-text);
 }
 
 .navbar .container-navbar .navbar-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .navbar .container-navbar .navbar-menu a {
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 700;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--c-text);
+  font-weight: 700;
 }
 
 .navbar .container-navbar .navbar-menu a:hover {
-    color: #ff6600;
+  color: var(--c-primary);
 }
 
 .navbar .container-navbar .menu-toggle {
-    display: flex;
-    margin-right: 10px;
-    margin-top: -5%;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+  margin-top: -5%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .navbar .container-navbar .menu-toggle img {
-    width: 100%;
+  width: 100%;
 }
 
-.navbar .container-navbar .show-menu .navbar-menu {
-    display: block;
+.navbar .container-navbar .menu-toggle:hover {
+  color: var(--c-primary);
+}
+
+.navbar .container-navbar .menu-toggle.active {
+  color: var(--c-primary);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: var(--c-background);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: var(--c-heading);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  color: var(--c-text);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-accent);
+  height: 100px;
+}
+
+.footer p {
+  font-size: 18px;
+  color: var(--c-text);
 }
 
 
