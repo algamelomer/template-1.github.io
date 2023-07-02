@@ -47,20 +47,9 @@ window.addEventListener('load', () => {
     
 // }
 // .navbar .container-navbar .navbar-menu-show
-onload = () => {
-    let navbar = document.getElementById("navbarMenu");
-    let btn = document.getElementById("nav-bar");
-    btn.onclick = () => {
-      if (navbar.style.display === "block") {
-        navbar.style.display = "none";
-      } else {
-        navbar.style.display = "block";
-      }
-    };
-  };
 
   onload=()=>{
-          let navbar = document.getElementById("navbarMenu");
+    let navbar = document.getElementById("navbarMenu");
     let btn = document.getElementById("nav-bar");
     btn.onclick = () => {
       if (navbar.style.display === "block") {
