@@ -16,6 +16,12 @@
             right: 10px;
             display: none;
         }
+
+        #test img{
+            width: 20px;
+            height: 20;
+        }
+
     </style>
 </head>
 
@@ -33,7 +39,7 @@
                 </div>
         </div>
     </section>
-    <button id="test">test
+    <button id="test"><img src="img/icons/arraw.png" alt="">
     </button>
 
     <section class="navbar">
@@ -41,42 +47,51 @@
             <a href="index.html" class="info">
                 <img src="img/icons/logo_1.png" alt="Icon">
                 <h1>
-                      HERE IS THE PROJECT TITLE
+                    HERE IS THE PROJECT TITLE
                 </h1>
             </a>
+            <div>
             <button class="menu-toggle" id="nav-bar">
                 <img src="img/icons/menu.png" alt="Menu Icon">
             </button>
             <div class="navbar-menu show" id="navbarMenu">
-                <a href="index.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <div class="list-1"><a href="index.html">Home</a></div>
+                <div class="list-2"><a href="#">About</a></div>
+                <div class="list-3"><a href="#">Contact</a></div>
+                </div>
             </div>
-        </nav>
-    </section>
+            </nav>
+        </section>
     
     
-<section class="swiper">
+
+    <section class="swiper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="img-1"></div>
+                    <img class="img-large" src="img/icons/logo_1.png" alt="Image 1">
                     <div class="slide-caption">Lorem ipsum dolor sit.</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img-2"></div>
+                    <img class="img-large" src="img/icons/logo_1.png" alt="Image 2">
                     <div class="slide-caption">Lorem ipsum dolor sit.</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img-3"></div>
+                    <img class="img-large" src="img/icons/logo_1.png" alt="Image 3">
                     <div class="slide-caption">Lorem ipsum dolor sit.</div>
                 </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-</section> 
-
+    </section>
+    
+    <div class="small-images-container">
+        <div class="img-small" data-target="0" style="background-image: url('img/icons/logo_1.png')"></div>
+        <div class="img-small" data-target="1" style="background-image: url('img/icons/logo_1.png')"></div>
+        <div class="img-small" data-target="2" style="background-image: url('img/icons/logo_1.png')"></div>
+    </div>
+    
 
 <div style="text-align: center; margin-top: 20px;">
     <h1>Lorem ipsum dolor sit.</h1>
@@ -265,7 +280,7 @@
                 <h3>Newsletter</h3>
                 <p>Subscribe to the newsletter.</p>
                 <div class="form-Newsletter">
-                    <input type="text" placeholder="Your email">
+                    <input type="text" placeholder="Your email" required>
                     <button type="button">SignUp</button>
                 </div>
             </div>
