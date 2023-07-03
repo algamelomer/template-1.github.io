@@ -549,6 +549,8 @@ body{
     margin-top: 20px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .container-introductory-photos {
